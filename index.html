@@ -1,16 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<title>天天玩樂園</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+    
+    .mySlides {
+        display: none
+    }
+</style>
 
 <body>
-    <h1>111</h1>
-    <p>000</p>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-teal w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">首頁</a>
+            <a href="#game" class="w3-bar-item w3-button w3-padding-large w3-hide-small">遊戲簡介</a>
+            <a href="#news" class="w3-bar-item w3-button w3-padding-large w3-hide-small">最新消息</a>
+            <a href="#call" class="w3-bar-item w3-button w3-padding-large w3-hide-small">聯絡我們</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">下載<i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#iOS" target="_blank" class="w3-bar-item w3-button">iOS版本</a>
+                    <a href="Android" class="w3-bar-item w3-button ">Android版本</a>
+                </div>
+            </div>
+            <a href="javascript:void(0) " class="w3-padding-large w3-hover-red w3-hide-small w3-right "><i class="fa fa-search"></i></a>
+        </div>
+
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-teal w3-hide w3-hide-large w3-hide-medium w3-top " style="margin-top:46px ">
+        <a href="#game" class="w3-bar-item w3-button w3-padding-large " onclick="myFunction() ">遊戲簡介</a>
+        <a href="#news" class="w3-bar-item w3-button w3-padding-large " onclick="myFunction() ">最新消息</a>
+        <a href="#customer" class="w3-bar-item w3-button w3-padding-large " onclick="myFunction() ">聯絡我們</a>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content " style="max-width:2000px;margin-top:46px ">
+
+        <!--封面-->
+        <div class="w3-display-container w3-center ">
+            <img src="封面.jfif " style="width:100% ">
+        </div>
+
+        <!--重要公告-->
+        <marquee direction="left " height="45 " align="midden " bgcolor="yellow " height="30 " scrollamount="10 " style="font-size:200%; font-weight:bold; color:red; "><a href="#important " style="text-decoration:none " onclick="document.getElementById(
+                        '20210607a').style.display='block' ">!!重要公告!![2021.06.07]臨時維護公告</a></marquee>
+
+        <!-- 遊戲介紹 -->
+        <div class="w3-container w3-content w3-left-align w3-padding-64 " style="max-width:800px" id="game">
+            <h2 class="w3-wide w3-center ">遊戲簡介</h2>
+
+            <div class="mySlides w3-display-container w3-center " id="playtogether">
+                <p class="w3-opacity w3-center-align "><i>Play Together</i></p>
+                <h4 class="w3-justify ">《天天玩樂園》是以童話風格的虛擬世界「Kaia Island」為背景， 男女老少都能輕鬆遊玩的社交類手機遊戲。遊戲以可愛 3D 畫風的背景與角色、寵物、服飾、家具等為特徵，且自由度極高的開放性世界與簡便的遊戲方式也降低了遊戲的門檻。</h4>
+            </div>
+            <div class="mySlides w3-display-container w3-center " id="aboutthegame">
+                <p class="w3-opacity w3-center-align "><i>About The Game</i></p>
+                <h4 class="w3-justify ">帶著小伴侶去兜風吧?或者去露營場釣個魚，睡個懶覺?你想做什麼都可以，小小世界!來與朋友一起玩一場迷你遊戲如何?!Play Together?</h4>
+                <h4 class="w3-justify "> 現在，在這裡!我們就是好朋友!<br> 全世界朋友們一同玩樂的，只屬於我們的虛擬世界!大家一起 天天玩樂園!</h4>
+            </div>
+            <div class="mySlides w3-display-container w3-center " id="playtogether1">
+                <p class="w3-opacity w3-center-align "><i>大家一起玩</i></p>
+                <h4 class="w3-justify ">實力，運氣，都加起來，活到最後就是勝者!各種小遊戲等你挑戰!迷你遊戲天國<br>-無限奔馳本能~!都市，沙漠，城牆，宇宙，在各種跑到釋放你的奔馳本能!<br>-避開旋轉的巨大木珠，生存至最後!<br>-不是我就OK!躲避炸彈~!<br>-要成為君王，要承受其負擔!搶來搶去的王冠爭奪戰，最後搶奪到王冠的人才是勝利者~!<br>-與全世界的朋友一同享受的17種的迷你遊戲!現在來一場~!</h4>
+            </div>
+            <div class="mySlides w3-display-container w3-center " id="show">
+                <p class="w3-opacity w3-center-align "><i>秀出你的個性!使用各種服飾來打扮你的角色</i></p>
+                <h4 class="w3-justify ">秀出你的個性!在天天玩樂園中展現出你的藝術風格~!超多豐富的服飾道具來打扮出獨一無二的角色!<br>小鴨，小丑，宇宙人，小蜜蜂等，想像什麼都能實現!<br>-終於有了自己的房子!誰都可以獲得自己的房子~!黑白家具?豪華家具?應有盡有~~~展現你的風格!</h4>
+            </div>
+            <div class="mySlides w3-display-container w3-center " id="sport">
+                <p class="w3-opacity w3-center-align "><i>大家聚集在廣場~歡迎來到我們的小小世界"天天玩樂園 "</i></p>
+                <h4 class="w3-justify ">吃喝玩樂，逛街，運動，想做的事很多嗎?那趕緊來"天天玩樂園 "廣場!廣場很大，一天逛不完喔~!<br>-哈哈我買車了，有去兜風!高級的轎車，復古風格的跑車，連碰碰車也有?來買一輛車去逛街吧?<br>-在廣場和朋友聊天~!或是在露營場和朋友邊烤BBQ邊看營火，或是大家一起去游泳!等等，戶外舞台上有跳舞比賽~!看看誰跳的最好看!<br>-我就是釣魚王!能釣魚的地方我都會去!海灘，湖泊，小池塘，等著!<br>-在海灘摩天輪看夜景~然後去海灘的咖啡廳看著碧藍的海喝咖啡~不是很浪漫嗎~!<br>-等等!在廣場完成各種任務時，可以獲得各種獎勵喔!捕捉螢火蟲，外送披薩，尋找小狗，等各種任務等你挑戰~!</h4>
+            </div>
+            <div class="mySlides w3-display-container w3-center " id="school">
+                <p class="w3-opacity w3-center-align "><i>快快樂樂的上學</i></p>
+                <h4 class="w3-justify ">在天天玩園世界中的學校，聽課程的話還可以獲得獎勵喔~啊對了!晚上據說會有僵屍出沒所以要額外小心!<br>-新生是誰啊?啦啦隊又是誰?在學校可以選擇你想要的角色!記住名牌要帶好喔~!<br>-什麼~一樣呢~?顏色分類!數學計算遊戲!迷你遊戲方式的上課，絕對保證好玩~!</h4>
+            </div>
+            <div class="mySlides w3-display-container w3-center " id="pet ">
+                <p class="w3-opacity w3-center-align "><i>可愛的小小伴侶!小小寵物!</i></p>
+                <h4 class="w3-justify ">小巧可愛的小豬，小狗，僵屍狗，小雞，三色貓，小黑豬等...27種的小小伴侶!陪牠們玩或一起去散步，一同享受"天天玩樂園 "的優閒生活!<br>-過來~坐下!跳!好厲害~根據寵物種類可以習得的技巧也不同~~!</h4>
+            </div>
+            <div class="mySlides w3-display-container w3-center " id="onepeople ">
+                <p class="w3-opacity w3-center-align "><i>一個人也不孤單!來一趟休閒旅遊</i></p>
+                <h4 class="w3-justify ">愛惜自己，珍惜自己!獨自一人前往的休閒旅遊!料理、釣魚、露營，各種有趣的事情在等你!<br>-快樂的家，在溫暖的家中享受的生活!今天就由我來下廚~!烹飪各種料理或演奏樂器也不錯~<br>-不要找我~!去公車旅行!或去乘坐浪漫的熱氣球!在天上看的風景也不錯喔?當然也可以用你的雙腳去旅行<br>-登山是不錯的運動!但在天天玩樂園中，我們登的不是山而是在操場上的遊樂場~!努力爬到頂端，看誰最會爬，如何~?</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Tour Section -->
+    <div class="w3-teal" id="news">
+        <div class="w3-container w3-content w3-padding-32" style="max-width:800px;">
+            <h2 class="w3-center" style="font-weight:bold;">最新消息</h2>
+            <hr>
+            <button class="w3-button" onclick="document.getElementById('20210607a').style.display='block'" style="font-size:20px;">[2021.06.07]臨時維護公告</button><br>
+            <button class="w3-button" onclick="document.getElementById('20210607b').style.display='block'" style="font-size:20px;">[2021.06.07]網路連接問題通知</button><br>
+            <button class="w3-button" onclick="document.getElementById('20210604').style.display='block'" style="font-size:20px;">[2021.06.04]6月7日版本更新相關伺服器維護公告</button><br>
+            <button class="w3-button" onclick="document.getElementById('20210603a').style.display='block'" style="font-size:20px;">[2021.06.03]登入獎勵活動公告</button><br>
+            <button class="w3-button" onclick="document.getElementById('20210603b').style.display='block'" style="font-size:20px;">[2021.06.03]6/7更新詳細公告</button><br>
+            <button class="w3-button" onclick="document.getElementById('20210601').style.display='block'" style="font-size:20px;">[2021.06.01]臨時維護公告</button><br>
+            <button class="w3-button" onclick="document.getElementById('20210530').style.display='block'" style="font-size:20px;">[2021.05.30]遺失之島從新開放時間</button><br>
+        </div>
+    </div>
+
+
+
+    <!--詳細最新公告-->
+    <div id="20210607a" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32" id="important">
+                <h2>[2021.06.07]臨時維護公告</h2>
+            </header>
+            <div class="w3-container">
+                <h4>各位好，我們是天天玩樂園!<br><br>為了給大家提供更穩定的遊戲服務，我們將對天天玩樂園伺服器進行維護工作。<br><br>*時間:6/7
+                    <emsp>12:00~14:00(GMT+9)<br><br>*注意事項<br><br>-我們會盡全力給各位提供更加有趣的KAIA島嶼的快樂生活。<br>-維護時，部分伺服器會以開啟的狀態下進行，但根據維護地進行狀況有可能會停止伺服器。<br><br>謝謝。</h4>
+                <button class="w3-button w3-red w3-section w3-right" onclick="document.getElementById('20210607a').style.display='none'">Close <i class="fa fa-remove"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="20210607b" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32">
+                <h2>[2021.06.07]網路連接問題通知</h2>
+            </header>
+            <div class="w3-container">
+                <h4>各位好，我們是天天樂園!<br>因部分網路環境不穩定，出現了網路連接異常的問題!<br><br>原因正在確認中，且將會盡快修復，並再次公告給您。<br><br>造成您的不便，非常抱歉<br>謝謝您的體諒與支持</h4>
+                <button class="w3-button w3-red w3-section w3-right" onclick="document.getElementById('20210607b').style.display='none'">Close <i class="fa fa-remove"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="20210604" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32">
+                <h2>[2021.06.04]6月7日版本更新相關伺服器維護公告</h2>
+            </header>
+            <div class="w3-container">
+                <h4>各位好，我們是天天玩樂園!<br>6月7日版本更新相關伺服器維護介紹。<br><br>*時間6/7
+                    <emsp>06:30~10:00(GMT+9)<br><br>我們會盡全力給各位提供更加有趣的KAIA島嶼的快樂生活。<br><br>謝謝。</h4>
+                <button class="w3-button w3-red w3-section w3-right" onclick="document.getElementById('20210604').style.display='none'">Close <i class="fa fa-remove "></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="20210603a" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32">
+                <h2>[2021.06.03]登入獎勵活動公告</h2>
+            </header>
+            <div class="w3-container">
+                <h4>各位好，我們是"天天玩樂園 "。<br><br>每天來"天天玩樂園 "獲得禮物吧!<br><br>[活動期間]<br>2021年6月4日~2021年6月10日<br><br>[活動獎勵]<br>寶石20(6月4日~6日08:00(GMT+9))<br>寶石12(6月7日~10日08:00(GMT+9))<br>星幣1000(6月4日~10日18:00(GMT+9))<br><br>*注意事項<br>-獎勵會發送至信箱<br>-只能在預領時間內收領，請務必確認時間<br>-期限已過但未收領的獎勵會消失，消失的獎勵無法幫您復原</h4>
+                <button class="w3-button w3-red w3-section w3-right" onclick="document.getElementById('20210603a').style.display='none'">Close <i class="fa fa-remove"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="20210603b" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32">
+                <h2>[2021.06.03]6/7更新詳細公告</h2>
+            </header>
+            <div class="w3-container">
+                <h4>各位好，我們是天天樂園!<br>今日給各位帶來了6月7日即將進行的更新相關內容<br><br>[新增要素]<br>-追加海外旅行系統<br>:去旅行吧!可以與全世界當朋友喔!<br>:通過廣場的旅行社，可以自由自在地移動到其他地域<br>:只有在旅行社販賣的商品也不要忘記來看看喔!<br><br>-追加42種表情符號&獲得任務<br>:使用各種表情符號來表現您的感情!部分表情符號可以通過任務獲得喔!<br>-新增房子內系統<br>:新增人體模型，可以給人體模型穿上衣服後方便的替換!<br><br>[便利性改善]<br>-提高房子內家具佈置上限<br>-改善釣魚斷線<br>-其他UI及便利性改善<br><br>*注意事項*<br>-更新以及改善事項可能會根據開發狀況修正及追加<br>-商品的販賣形程，會根據商品種類有所差異<br><br>我們會盡全力給各位提供更加有趣的KAIA島嶼生活<br>謝謝</h4>
+                <button class="w3-button w3-red w3-section w3-right" onclick="document.getElementById('20210603b').style.display='none'">Close <i class="fa fa-remove"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="20210601" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32">
+                <h2>[2021.06.01]臨時維護公告</h2>
+            </header>
+            <div class="w3-container">
+                <h4>各位好，我們是天天玩樂園!<br><br>為給大家提供更穩定的遊戲服務，我們將對天天玩樂園伺服器進行維護工作。<br><br>*時間:6/2
+                    <emsp>06:00~08:00(GMT+9)<br><br>*注意事項<br>-我們會盡全力給各位提供更加有趣的KAIA島嶼的快樂生活<br>-維護時，部分伺服器會以開啟的狀態下進行，但根據維護的進行狀況有可能會停止伺服器<br><br>謝謝</h4>
+                <button class="w3-button w3-red w3-section w3-right" onclick="document.getElementById('20210601').style.display='none'">Close <i class="fa fa-remove"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="20210530" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32">
+                <h2>[2021.05.30]遺失之島從新開放時間</h2>
+            </header>
+            <div class="w3-container">
+                <h4>各位好，我們是"天天玩樂園 "<br><br>5/30遺失之島上的實際套用的遊戲內介面及獎勵目錄部份發生錯誤<br>正在逕行中的遺失之島開放時間與獎勵目錄會結束，然後預計會以變更的獎勵目錄再次開啟<br><br>因獎勵目錄的錯誤給各位帶來不便我們深表歉意，詳細的內容請參考下方<br><br>目前進行中的遺失之島開放時間:2021.05.30
+                    <emsp>12:00:00~2021.05.30
+                        <emsp>16:00:00(KST)<br>遺失之島重新開放時間:2021.05.30
+                            <emsp>17:00:00~2021.05.31
+                                <emsp>(KST)<br><br>[獎勵目錄]<br>-盒式恐龍帽子<br>-盒式恐龍裝<br>-盒式恐龍鞋<br><br>[參考事項]<br>*以往公告的遺失之島會提早結束，之後會根據本公告告知的行程再度進行<br><br>*已經獲得忍者獎勵的居民們，會個別準備補償案<br><br>我們會盡全力給各位提供更加有趣的KAIA島嶼生活<br>謝謝</h4>
+                <button class="w3-button w3-red w3-section w3-right" onclick="document.getElementById('20210530').style.display='none'">Close <i class="fa fa-remove"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-opacity w3-center w3-light-grey w3-xxlarge ">
+        <a href="https://www.facebook.com/PlayTogetherGame" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/playtogether_game/?fbclid=IwAR2VnjTQbDkOr5GUhHklfUeOW1ka-J9LUoWUA6mM-iKGvzdi-swgSbuzHJw" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <p></p>
+        <a href="https://apps.apple.com/tw/app/id1402384531" target="_blank"><img src="appstore.png" style="width:20%" id="iOS"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.haegin.playtogether&referrer=utm_source%3Dgamer.com.tw%26utm_campaign%3Dgnn" target="_blank" id="Android"><img src="google.png" style="width:20%"></a>
+        <p style="font-size:16px;" class="w3-wide w3-center-left" id="call">聯絡信箱:support@playtogether.zendesk.com</p>
+        <p style="font-size:16px;" class="w3-wide w3-center-left">地址:1407,C-dong,Woolim Lions Valley, 168,Gasan<br>digital 1-ro, Geumcheon-gu,Seoul,SOUTH</p>
+        <p style="font-size:16px;" class="w3-wide w3-center-left">發行日期:2021年4月12日</p>
+        <p style="font-size:16px;" class="w3-wide w3-center-left">最新版本:1.1.3</p>
+        <button style="border:none; color:red; padding:20px; font-size:25px;"><a href="#"><i class="fa fa-arrow-up w3-margin-center">To the top</i></a></button>
+    </footer>
+
+    <script>
+        // Automatic Slideshow - change image every 4 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides ");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none ";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block ";
+            setTimeout(carousel, 4000);
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
 </body>
 
 </html>
